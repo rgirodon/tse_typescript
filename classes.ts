@@ -1,9 +1,11 @@
+/*
 interface IPoint {
     x: number;
     y: number;
 }
+*/
 
-class Point implements IPoint {
+class Point{
     x: number;
     y: number;
 
@@ -26,6 +28,7 @@ let p: Point = new Point(10, 5);
 p.display();
 p.scale(2);
 p.display();
+
 
 class SpacePoint extends Point {
 
@@ -51,15 +54,16 @@ sp.display();
 sp.scale(2);
 sp.display();
 
+
 class Square {
     
-    private _length = 0;
+    private _length: number = 0;
     
-    get length() {
+    get length(): number {
       return this._length;
     }
 
-    set length(value) {
+    set length(value: number) {
       this._length = value;
     }
 
@@ -73,10 +77,13 @@ class Square {
 }
 
 let s: Square = new Square();
+console.log(s.length);
 s.length = 10;
+console.log(s.length);
 
 console.log(`Perimeter : ${s.perimeter()}`);
 console.log(`Area : ${s.area()}`);
+
 
 class MyClass {
     static x: number = 0;
@@ -110,3 +117,6 @@ const c = new Box(1);
 let c_content: number = c.showContent();
 console.log(c_content);
 
+const d = new Box(true);
+let d_content: boolean = d.showContent();
+console.log(d_content);

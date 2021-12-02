@@ -1,7 +1,7 @@
-import {pi, squareTwo, phi} from './module_named_exporter';
-import absolute from './module_default_exporter';
+import { squareTwo } from './module_named_exporter';
+import absoluteValue from './module_default_exporter';
 
-console.log(absolute(squareTwo));
+console.log(absoluteValue(-squareTwo));
 
 import { Cat, Dog } from './module_type_exporter';
 
