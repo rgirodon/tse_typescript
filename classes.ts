@@ -5,6 +5,7 @@ interface IPoint {
 }
 */
 
+/*
 class Point{
     x: number;
     y: number;
@@ -53,8 +54,8 @@ let sp: SpacePoint = new SpacePoint(10, 5, 3);
 sp.display();
 sp.scale(2);
 sp.display();
-
-
+*/
+/*
 class Square {
     
     private _length: number = 0;
@@ -83,8 +84,8 @@ console.log(s.length);
 
 console.log(`Perimeter : ${s.perimeter()}`);
 console.log(`Area : ${s.area()}`);
-
-
+*/
+/*
 class MyClass {
     static x: number = 0;
 
@@ -95,16 +96,17 @@ class MyClass {
 
 console.log(MyClass.x);
 MyClass.printX();
+*/
 
-class Box<Type> {
+class Box<T> {
     
-    contents: Type;
+    contents: T;
 
-    constructor(value: Type) {
+    constructor(value: T) {
         this.contents = value;
     }
 
-    showContent(): Type {
+    showContent(): T {
         return this.contents;
     }
 }

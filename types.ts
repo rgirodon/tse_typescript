@@ -1,6 +1,7 @@
-let firstname: string = "Rémy";
+/*
+let firstname: string = 'Rémy';
 
-let age: number = 43;
+let age: number = 46;
 
 let hasKids: boolean = true;
 
@@ -9,10 +10,11 @@ let skills: string[] = ["Java", "NoSQL", "WebDev"];
 console.log(`${firstname} is ${age} years old. Does he have kids ? ${hasKids}`);
 
 skills.forEach(
-    (item) => {
-        console.log(item);
+    (item: string) => {
+        console.log(item.toLowerCase());
     }
 );
+*/
 
 /*
 age = "Hello";
@@ -20,7 +22,7 @@ age = "Hello";
 firstname = 58;
 */
 
-
+/*
 function greet(name: string): string {
     
     return("Hello, " + name.toUpperCase() + "!!");
@@ -29,12 +31,12 @@ function greet(name: string): string {
 let welcomeMessage: string = greet(firstname);
 
 console.log(welcomeMessage);
-
+*/
 /*
 age = greet('Arturo');
 */
 
-
+/*
 function sum(a: number, b?: number, c?: number): number {
 
     let result: number = a;
@@ -57,8 +59,9 @@ console.log(sum(1, 2, 3));
 console.log(sum(1, 2));
 
 console.log(sum(1));
+*/
 
-
+/*
 function printId(id: number | string):string {
 
     return("Your ID is: " + id);
@@ -67,8 +70,9 @@ function printId(id: number | string):string {
 console.log(printId(36));
 
 console.log(printId("BZ26"));
+*/
 
-
+/*
 function printCoord(pt: { x: number; y: number }): void {
     
     console.log("The coordinate's x value is " + pt.x);
@@ -83,7 +87,7 @@ let myPoint = {
 printCoord(myPoint);
 
 // printCoord({ abcisse: 3, ordonnee: 7 });
-
+*/
 
 interface IPoint {
     x: number;
