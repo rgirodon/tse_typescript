@@ -1,9 +1,11 @@
-export type Cat = { 
+type Cat = { 
     color: string; 
     yearOfBirth: number 
 };
 
-export type Dog = {
+type Dog = {
     race: string;
     yearOfBirth: number;
 }
+
+export {Cat, Dog};
